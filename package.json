@@ -1,8 +1,8 @@
 {
-  "name": "contadoralamano_app",
+  "name": "cajeroalamano_app",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "G3M2_9>",
+  "author": "G3M2_9",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

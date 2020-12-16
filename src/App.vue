@@ -2,15 +2,18 @@
 <template>
   <div id="app">
     <div class="header">
+      <!-- <img src="/assets/contador3.png" alt="logo">  -->
       <h1>Contador a la Mano</h1>
         <nav>
           <button v-on:click="init" v-if="is_auth" > Registro </button> 
+          
           <button v-on:click="getBalance" v-if="is_auth" > Balance </button> 
           <button v-on:click="getTipo" v-if="is_auth" > Reporte por tipo </button>
         </nav>
       </div>
 
     <div class="main-component">
+      
       <router-view> </router-view>
     </div>
 
@@ -77,7 +80,7 @@ body{
   padding: 0;
   width: 100%;
   height: 10vh;
-  min-height: 100px; background-color: #283747 ; color:#E5E7E9 ;
+  min-height: 100px; background-color: #984CF5 ; color:#E5E7E9 ;
   display: flex;
   justify-content: space-between; align-items: center;
 }
@@ -98,14 +101,14 @@ body{
 
 .header nav button{
   color: #E5E7E9;
-  background: #283747;
-  border: 1px solid #E5E7E9;
+  background: #A564F5;
+  border: 1px solid #45F5DA;
   border-radius: 5px;
   padding: 10px 20px;
 }
 
 .header nav button:hover{
-  color: #283747; 
+  color: #4d229c; 
   background: #E5E7E9; 
   border: 1px solid #E5E7E9;
 }
@@ -122,7 +125,7 @@ body{
   width: 100%;
   height: 10vh;
   min-height: 100px; 
-  background-color: #283747; 
+  background-color: #984CF5; 
   color: #E5E7E9;
 }
 
