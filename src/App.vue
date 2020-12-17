@@ -2,7 +2,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <!-- <img src="/assets/contador3.png" alt="logo">  -->
+      <img src="./assets/contador3.png" alt="logo">
       <h1>Contador a la Mano</h1>
         <nav>
           <button v-on:click="init" v-if="is_auth" > Registro </button> 
@@ -70,6 +70,7 @@
 </script>
 
 // Representa el css (estilo) -->
+
 <style>
 body{
   margin: 0 0 0 0;
@@ -83,6 +84,12 @@ body{
   min-height: 100px; background-color: #984CF5 ; color:#E5E7E9 ;
   display: flex;
   justify-content: space-between; align-items: center;
+}
+
+#app img{
+  with: 200px;
+  height: 50px;
+  padding: 0 0 0 20px;
 }
 
 .header h1{
