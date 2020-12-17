@@ -8,7 +8,7 @@
             </nav>
        
             <h2> Hola (^.^) </h2>
-            <h2>Aqui tienes tus registros de <span> {{registro_tipo}}s </span></h2>
+            <h2>Aqui tienes tus registros de <span> {{registro_tipo}} </span></h2>
             <table>
                 <tr>
                     <th>id</th>
@@ -39,7 +39,7 @@
                 username:"", 
                 Balance:"", 
                 nota:"",
-                registro_tipo:"egreso",
+                registro_tipo:"",
                 tipo:"",
                 registro: [
                     {
@@ -57,7 +57,7 @@
         }
         },
         methods: {
-             getIngreso: function(){
+            getIngreso: function(){
             this.username = this.$route.params.username
             this.registro_tipo="ingreso"  
             let self = this
