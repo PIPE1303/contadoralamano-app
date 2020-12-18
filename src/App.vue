@@ -3,13 +3,13 @@
   <div id="app">
     <div class="header">
       <img src="./assets/contador3.png" alt="logo">
-      <h1>Contador a la Mano</h1>
+      <!-- <h1>Contador a la Mano</h1> -->
         <nav>
-          <button v-on:click="init" v-if="is_auth" > Registro </button>
+          <button v-on:click="getRegistro" v-if="is_auth" > Registro </button>
           <button v-on:click="getBalance" v-if="is_auth" > Balance </button>
           <button v-on:click="getTipo" v-if="is_auth" > Reporte por tipo </button>
         </nav>
-      </div>
+    </div>
 
     <div class="main-component">
 
@@ -40,8 +40,15 @@
         let username = localStorage.getItem("current_username")
         this.$router.push({name: "user", params: {username:username}})
       }
-
     },
+      
+      getRegistro: function(){
+        if(this.$route.name != "registro"){
+        let username = localStorage.getItem("current_username")
+        this.$router.push({name: "registro", params: {username:username}})
+        }
+
+      },
 
       getBalance: function(){
         if(this.$route.name != "balance"){

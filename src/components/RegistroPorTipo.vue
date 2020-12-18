@@ -48,7 +48,6 @@
                         fecha:"10-12-2020",
                         etiqueta:"comida",
                         nota:"pina"
-
                     }
                 ]
 

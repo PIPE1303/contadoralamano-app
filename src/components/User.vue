@@ -1,6 +1,7 @@
 <template>
     <div id="User">
         <h2> Hola <span> {{username}}, </span> ¡Bienvenido! </h2>
+
     </div>
 </template>
 

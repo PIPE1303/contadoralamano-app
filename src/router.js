@@ -2,6 +2,7 @@ import vueRouter from 'vue-router'
 import User from './components/User'
 import MiBalance from './components/Balance'
 import RegistroTipo from './components/RegistroPorTipo'
+import AgregarRegistro from './components/Registro'
 import App from'./App'
 
 const router = new vueRouter({
@@ -18,6 +19,12 @@ const router = new vueRouter({
         path: '/user/:username', // "/user/{username}"
         name: "user",
         component: User
+        },
+
+        {
+        path:'/registro/:username',
+        name: "registro",
+        component: AgregarRegistro
         },
 
         {
