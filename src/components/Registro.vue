@@ -48,7 +48,7 @@
             nota:this.nota
       };
       axios
-        .post("http://127.0.0.1:8000/registro/", datosJSON)
+        .post("http://contador-ala-mano.herokuapp.com/registro/", datosJSON)
         .then(respuesta  => {
           alert(respuesta.data.mensaje);
         })
